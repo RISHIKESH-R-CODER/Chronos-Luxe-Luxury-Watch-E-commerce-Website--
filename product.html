@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | Chronos Luxe</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/product.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+        NAVBAR
+=========================== -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+Chronos <span>Luxe</span>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+ <li><a href="cart.html">Cart</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<a href="wishlist.html">
+
+<i class="fa-regular fa-heart"></i>
+
+</a>
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+<i class="fa-regular fa-user"></i>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ===========================
+        PRODUCT DETAILS
+=========================== -->
+
+<section class="product-details">
+
+<div class="product-container">
+
+<!-- LEFT -->
+
+<div class="product-gallery">
+
+<div class="main-image">
+
+<img id="mainImage"
+     src=""
+     alt="Luxury Watch">
+
+</div>
+
+<div class="thumbnail-images"
+     id="thumbnailContainer">
+
+<!-- JavaScript will load thumbnails -->
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="product-info">
+
+<h1 id="productName">
+
+Loading...
+
+</h1>
+
+<div class="rating">
+
+★★★★★
+
+<span id="ratingText">
+
+(5 Reviews)
+
+</span>
+
+</div>
+
+<h2 id="productPrice">
+
+$0
+
+</h2>
+
+<p id="productDescription">
+
+Loading description...
+
+</p>
+
+<div class="specifications">
+
+<h3>
+
+Specifications
+
+</h3>
+
+<ul>
+
+<li>
+
+<strong>Brand:</strong>
+
+<span id="productBrand"></span>
+
+</li>
+
+<li>
+
+<strong>Category:</strong>
+
+<span id="productCategory"></span>
+
+</li>
+
+<li>
+
+<strong>Water Resistance:</strong>
+
+100M
+
+</li>
+
+<li>
+
+<strong>Movement:</strong>
+
+Automatic
+
+</li>
+
+<li>
+
+<strong>Warranty:</strong>
+
+5 Years
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="quantity">
+
+<button id="minusBtn">
+
+-
+
+</button>
+
+<input type="number"
+       id="quantity"
+       value="1"
+       min="1">
+
+<button id="plusBtn">
+
++
+
+</button>
+
+</div>
+
+<div class="product-buttons">
+
+<button id="addCart">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Add to Cart
+
+</button>
+
+<button id="wishlistBtn">
+
+<i class="fa-regular fa-heart"></i>
+
+Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+        RELATED PRODUCTS
+=========================== -->
+
+<section class="related-products">
+
+    <div class="section-title">
+
+        <h2>You May Also Like</h2>
+
+        <p>
+            Explore more luxury timepieces from our exclusive collection.
+        </p>
+
+    </div>
+
+    <div class="product-container" id="relatedProducts">
+
+        <!-- JavaScript will load related watches here -->
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        CUSTOMER REVIEWS
+=========================== -->
+
+<section class="reviews">
+
+    <div class="section-title">
+
+        <h2>Customer Reviews</h2>
+
+    </div>
+
+    <div class="review-container">
+
+        <div class="review-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>James Wilson</h3>
+
+            <p>
+                Outstanding craftsmanship and premium quality.
+                The watch looks even better in person.
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>David Brown</h3>
+
+            <p>
+                Fast delivery and beautiful packaging.
+                Highly recommended for luxury watch lovers.
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>Michael Johnson</h3>
+
+            <p>
+                Elegant design with exceptional finishing.
+                Worth every penny.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        NEWSLETTER
+=========================== -->
+
+<section class="newsletter">
+
+    <h2>Join Chronos Luxe</h2>
+
+    <p>
+
+        Subscribe to receive exclusive offers,
+        latest collections and luxury watch news.
+
+    </p>
+
+    <form>
+
+        <input
+            type="email"
+            placeholder="Enter your email">
+
+        <button type="submit">
+
+            Subscribe
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ===========================
+        FOOTER
+=========================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>Chronos Luxe</h2>
+
+            <p>
+
+                Luxury watches crafted with timeless
+                elegance, precision, and perfection.
+
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Customer Care</h3>
+
+            <ul>
+
+                <li><a href="#">Shipping</a></li>
+
+                <li><a href="#">Returns</a></li>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Terms & Conditions</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 Chronos Luxe. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ===========================
+        JAVASCRIPT
+=========================== -->
+
+<script src="js/products.js"></script>
+
+<script src="js/product.js"></script>
+
+</body>
+
+</html>

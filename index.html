@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chronos Luxe | Luxury Watches</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Chronos <span>Luxe</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-regular fa-heart"></i>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <i class="fa-regular fa-user"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <section class="hero" >
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                Swiss Craftsmanship Since 1950
+            </p>
+
+            <h1>
+                Timeless Luxury<br>
+                For Every Moment
+            </h1>
+
+            <p class="hero-text">
+
+                Discover handcrafted luxury watches
+                that combine precision, elegance,
+                and timeless design.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="shop-btn" onclick="location.href='shop.html'" >
+                    Shop Collection
+                </button>
+
+                <button class="explore-btn">
+                    Explore More
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/hero/watch.png" alt="Luxury Watch">
+
+        </div>
+
+    </section>
+
+
+
+<section class="featured" >
+
+    <div class="section-title">
+        <h2>Featured Collection</h2>
+        <p>Crafted for those who appreciate timeless elegance.</p>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="product-click" onclick="openProduct(2)">
+                <img src="images/products/watch2.jpg" alt="Luxury Watch">
+                <h3>Imperial Gold</h3>
+                <p class="price">$6,199</p>
+            </div>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-click" onclick="openProduct(3)">
+                <img src="images/products/watch3.jpg" alt="Luxury Watch">
+                <h3>Prestige Black</h3>
+                <p class="price">$4,899</p>
+            </div>
+            <button onclick="addToCart(3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-click"onclick="openProduct(4)">
+                <img src="images/products/watch4.jpg" alt="Luxury Watch">
+                <h3>Diamond Elite</h3>
+                <p class="price">$7,999</p>
+            </div>
+            <button onclick="addToCart(4)">Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="best-sellers">
+
+    <div class="section-title">
+        <h2>Best Sellers</h2>
+        <p>Our most loved luxury timepieces.</p>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="product-click" onclick="openProduct(5)">
+                <img src="images/products/watch5.jpg" alt="Watch">
+                <h3>Classic Silver</h3>
+                <p class="price">$3,999</p>
+            </div>
+            <button onclick="addToCart(5)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-click" onclick="openProduct(6)">
+                <img src="images/products/watch6.jpg" alt="Watch">
+                <h3>Midnight Edition</h3>
+                <p class="price">$5,899</p>
+            </div>
+            <button onclick="addToCart(6)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-click" onclick="openProduct(7)">
+                <img src="images/products/watch7.jpg" alt="Watch">
+                <h3>Ocean Blue</h3>
+                <p class="price">$4,599</p>
+            </div>
+            <button onclick="addToCart(7)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-click" onclick="openProduct(8)">
+                <img src="images/products/watch8.jpg" alt="Watch">
+                <h3>Executive Gold</h3>
+                <p class="price">$6,999</p>
+            </div>
+            <button onclick="addToCart(8)">Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="brands" >
+
+    <div class="section-title">
+        <h2>Luxury Brands</h2>
+        <p>Discover world-renowned watchmakers.</p>
+    </div>
+
+    <div class="brand-container">
+
+        <div class="brand-box">
+            <h3>Rolex</h3>
+        </div>
+
+        <div class="brand-box">
+            <h3>Omega</h3>
+        </div>
+
+        <div class="brand-box">
+            <h3>TAG Heuer</h3>
+        </div>
+
+        <div class="brand-box">
+            <h3>Tissot</h3>
+        </div>
+
+        <div class="brand-box">
+            <h3>Longines</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="why-us" >
+
+    <div class="section-title">
+        <h2>Why Choose Chronos Luxe?</h2>
+        <p>Luxury, precision, and excellence in every timepiece.</p>
+    </div>
+
+    <div class="features">
+
+        <div class="feature-box">
+            <i class="fa-solid fa-gem"></i>
+            <h3>Premium Materials</h3>
+            <p>Crafted with sapphire crystal, stainless steel, and genuine leather.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-award"></i>
+            <h3>Swiss Precision</h3>
+            <p>Built with world-class precision and timeless craftsmanship.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Free Worldwide Shipping</h3>
+            <p>Enjoy secure and insured delivery anywhere in the world.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>5-Year Warranty</h3>
+            <p>Every watch comes with an international warranty.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="testimonials">
+
+    <div class="section-title">
+        <h2>What Our Clients Say</h2>
+    </div>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>
+                "Absolutely stunning craftsmanship. The attention to detail is unmatched."
+            </p>
+            <h4>- James Wilson</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "A perfect blend of luxury and elegance. Highly recommended."
+            </p>
+            <h4>- Sophia Carter</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "The best watch purchase I've ever made. Exceptional quality."
+            </p>
+            <h4>- Michael Brown</h4>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="newsletter">
+
+    <h2>Join Our Newsletter</h2>
+    <p>
+        Be the first to know about exclusive launches and luxury collections.
+    </p>
+
+    <form>
+
+        <input type="email"
+               placeholder="Enter your email">
+        <button type="submit">
+            Subscribe
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<footer >
+    <div class="footer-container">
+        <div class="footer-box">
+            <h2>Chronos Luxe</h2>
+            <p>
+                Luxury watches designed for those who appreciate timeless elegance.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Customer Care</h3>
+            <ul>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>
+            © 2026 Chronos Luxe. All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

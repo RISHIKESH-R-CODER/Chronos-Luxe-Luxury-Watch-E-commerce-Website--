@@ -1,0 +1,627 @@
+/* ===========================
+        PRODUCT PAGE
+=========================== */
+
+.product-details{
+
+    padding:80px 8%;
+
+    background:#0f0f0f;
+
+}
+
+.product-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+/* ===========================
+        IMAGE GALLERY
+=========================== */
+
+.product-gallery{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.thumbnail-images{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.thumbnail-images img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border:2px solid transparent;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.thumbnail-images img:hover{
+
+    border-color:var(--gold);
+
+    transform:scale(1.05);
+
+}
+
+.thumbnail-images img.active{
+
+    border-color:var(--gold);
+
+}
+
+.main-image{
+
+    flex:1;
+
+    background:#181818;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.main-image img{
+
+    width:100%;
+
+    max-width:450px;
+
+    transition:.3s;
+
+}
+
+/* ===========================
+        PRODUCT INFO
+=========================== */
+
+.product-info h1{
+
+    font-size:42px;
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+    font-family:'Playfair Display', serif;
+
+}
+
+.rating{
+
+    color:#FFD700;
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+}
+
+.rating span{
+
+    color:#ccc;
+
+    font-size:16px;
+
+    margin-left:10px;
+
+}
+
+.product-info h2{
+
+    color:var(--gold);
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.product-info p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+      SPECIFICATIONS
+=========================== */
+
+.specifications{
+
+    background:#181818;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:35px;
+
+}
+
+.specifications h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.specifications ul{
+
+    list-style:none;
+
+}
+
+.specifications li{
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.specifications li:last-child{
+
+    border-bottom:none;
+
+}
+
+.specifications strong{
+
+    color:#fff;
+
+}
+
+/* ===========================
+      QUANTITY
+=========================== */
+
+.quantity{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:35px;
+
+}
+
+.quantity button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    color:#000;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.quantity button:hover{
+
+    transform:scale(1.08);
+
+}
+
+.quantity input{
+
+    width:80px;
+
+    height:45px;
+
+    text-align:center;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1d1d1d;
+
+    color:#fff;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+        PRODUCT BUTTONS
+=========================== */
+
+.product-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.product-buttons button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+#addCart{
+
+    background:var(--gold);
+
+    color:#000;
+
+}
+
+#addCart:hover{
+
+    background:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+#wishlistBtn{
+
+    background:#1d1d1d;
+
+    color:#fff;
+
+    border:1px solid var(--gold);
+
+}
+
+#wishlistBtn:hover{
+
+    background:var(--gold);
+
+    color:#000;
+
+}
+
+/* ===========================
+      RELATED PRODUCTS
+=========================== */
+
+.related-products{
+
+    padding:90px 8%;
+
+    background:#111;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:38px;
+
+    color:var(--gold);
+
+    font-family:'Playfair Display', serif;
+
+}
+
+.section-title p{
+
+    margin-top:15px;
+
+    color:#cfcfcf;
+
+}
+
+.related-products .product-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+        REVIEWS
+=========================== */
+
+.reviews{
+
+    padding:90px 8%;
+
+    background:#0f0f0f;
+
+}
+
+.review-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.review-card{
+
+    background:#181818;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.review-card h3{
+
+    margin:15px 0;
+
+    color:#fff;
+
+}
+
+.review-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+.stars{
+
+    color:#FFD700;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+      NEWSLETTER
+=========================== */
+
+.newsletter{
+
+    padding:90px 8%;
+
+    text-align:center;
+
+    background:#111;
+
+}
+
+.newsletter h2{
+
+    color:var(--gold);
+
+    font-size:40px;
+
+    font-family:'Playfair Display', serif;
+
+}
+
+.newsletter p{
+
+    margin:20px auto;
+
+    max-width:600px;
+
+    color:#cfcfcf;
+
+}
+
+.newsletter form{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.newsletter input{
+
+    width:350px;
+
+    max-width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#1d1d1d;
+
+    color:#fff;
+
+}
+
+.newsletter button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:var(--gold);
+
+    color:#000;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.newsletter button:hover{
+
+    background:#fff;
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .product-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .product-gallery{
+
+        flex-direction:column-reverse;
+
+    }
+
+    .thumbnail-images{
+
+        flex-direction:row;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .product-info h1{
+
+        font-size:32px;
+
+    }
+
+    .product-info h2{
+
+        font-size:28px;
+
+    }
+
+    .product-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .product-buttons button{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .product-details,
+
+    .related-products,
+
+    .reviews,
+
+    .newsletter{
+
+        padding:60px 5%;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+}

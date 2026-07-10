@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Chronos Luxe</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+        NAVBAR
+========================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Chronos <span>Luxe</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html" class="active">Cart</a></li>
+            
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <i class="fa-regular fa-user"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- =========================
+        HERO
+========================= -->
+
+<section class="shop-hero">
+
+    <div class="shop-overlay">
+
+        <h1>Your Shopping Cart</h1>
+
+        <p>
+            Review your selected luxury watches before checkout.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        CART SECTION
+========================= -->
+
+<section class="cart-section">
+
+    <div class="cart-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="cart-items">
+
+            <h2>Cart Items</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Product</th>
+
+                        <th>Price</th>
+
+                        <th>Quantity</th>
+
+                        <th>Total</th>
+
+                        <th>Remove</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="cartItems">
+
+                    <!-- JavaScript will generate rows here -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+
+                <span>Items</span>
+
+                <span id="itemCount">0</span>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>Subtotal</span>
+
+                <span id="subtotal">$0</span>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>Shipping</span>
+
+                <span>FREE</span>
+
+            </div>
+
+            <div class="summary-row total">
+
+                <span>Total</span>
+
+                <span id="grandTotal">$0</span>
+
+            </div>
+
+            <button id="checkoutBtn">
+                Proceed to Checkout
+            </button>
+
+            <button id="clearCartBtn">
+                Clear Cart
+            </button>
+
+        </div>
+
+    </div>
+        <!-- =========================
+            RECOMMENDED PRODUCTS
+    ========================= -->
+
+    <section class="recommended">
+
+        <div class="section-title">
+
+            <h2>You May Also Like</h2>
+
+            <p>
+                Discover more luxury watches selected just for you.
+            </p>
+
+        </div>
+
+        <div class="product-container" id="recommendedProducts">
+
+            <!-- Recommended products will be loaded by JavaScript -->
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>Chronos Luxe</h2>
+
+                <p>
+                    Timeless luxury watches crafted with precision,
+                    elegance, and unmatched quality.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Chronos Luxe. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================
+            JAVASCRIPT
+    ========================= -->
+
+    <script src="js/products.js"></script>
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

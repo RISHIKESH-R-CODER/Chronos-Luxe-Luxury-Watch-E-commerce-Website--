@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | Chronos Luxe</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">
+                Chronos <span>Luxe</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    
+
+    <section class="shop-hero">
+        <div class="shop-overlay">
+            <h1>Luxury Watch Collection</h1>
+            <p>
+                Discover timeless craftsmanship and premium watches
+                designed for every occasion.
+            </p>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <aside class="sidebar">
+            <h2>Filters</h2>
+            <div class="filter-box">
+                <h3>Search</h3>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search watches...">
+            </div>
+
+            
+
+            <div class="filter-box">
+                <h3>Brand</h3>
+                <select id="brandFilter">
+                    <option value="all">All Brands</option>
+                    <option value="Rolex">Rolex</option>
+                    <option value="Omega">Omega</option>
+                    <option value="TAG Heuer">TAG Heuer</option>
+                    <option value="Tissot">Tissot</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <h3>Category</h3>
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Classic">Classic</option>
+                </select>
+            </div>
+
+            
+
+            <div class="filter-box">
+                <h3>Price</h3>
+                <select id="priceFilter">
+                    <option value="all">All Prices</option>
+                    <option value="5000">Below $5000</option>
+                    <option value="7000">Below $7000</option>
+                </select>
+            </div>
+
+        </aside>
+
+        
+
+        <div class="shop-content">
+            <div class="shop-top">
+                <h2>Our Collection</h2>
+                <select id="sortProducts">
+                    <option value="default">Sort By</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                    <option value="name">Name (A-Z)</option>
+                </select>
+            </div>
+
+            <div class="product-container" id="productContainer">
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+
+</section>
+<div class="pagination">
+            <button class="page-btn">Prev</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">Next</button>
+        </div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <h2>Chronos Luxe</h2>
+            <p>
+                Luxury watches crafted with precision, elegance, and timeless design.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Customer Care</h3>
+            <ul>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 Chronos Luxe. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+<script src="js/products.js"></script>
+<script src="js/shop.js"></script>
+
+</body>
+</html>
