@@ -32,6 +32,8 @@
 
     gap:20px;
 
+    min-width:0;
+
 }
 
 .thumbnail-images{
@@ -80,6 +82,8 @@
 
     flex:1;
 
+    min-width:0;
+
     background:#181818;
 
     border-radius:18px;
@@ -107,6 +111,12 @@
 /* ===========================
         PRODUCT INFO
 =========================== */
+
+.product-info{
+
+    min-width:0;
+
+}
 
 .product-info h1{
 
@@ -198,6 +208,8 @@
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
+    word-break:break-word;
+
 }
 
 .specifications li:last-child{
@@ -226,6 +238,8 @@
 
     margin-bottom:35px;
 
+    flex-wrap:wrap;
+
 }
 
 .quantity button{
@@ -247,6 +261,8 @@
     cursor:pointer;
 
     transition:.3s;
+
+    flex-shrink:0;
 
 }
 
@@ -305,6 +321,8 @@
     font-weight:600;
 
     transition:.3s;
+
+    min-height:48px;
 
 }
 
@@ -518,6 +536,8 @@
 
     color:#fff;
 
+    min-height:48px;
+
 }
 
 .newsletter button{
@@ -538,6 +558,8 @@
 
     transition:.3s;
 
+    min-height:48px;
+
 }
 
 .newsletter button:hover{
@@ -548,13 +570,40 @@
 
 /* ===========================
         RESPONSIVE
+    Breakpoints: 1200px / 992px / 768px / 425px / 375px / 320px
 =========================== */
 
+/* ---------- 1200px and below ---------- */
+@media(max-width:1200px){
+
+    .product-container{
+
+        gap:40px;
+
+    }
+
+    .product-info h1{
+
+        font-size:36px;
+
+    }
+
+}
+
+/* ---------- 992px and below (tablets: stack gallery/info) ---------- */
 @media(max-width:992px){
+
+    .product-details{
+
+        padding:70px 6%;
+
+    }
 
     .product-container{
 
         grid-template-columns:1fr;
+
+        gap:40px;
 
     }
 
@@ -574,8 +623,17 @@
 
     }
 
+    .related-products,
+    .reviews,
+    .newsletter{
+
+        padding:70px 6%;
+
+    }
+
 }
 
+/* ---------- 768px and below ---------- */
 @media(max-width:768px){
 
     .product-info h1{
@@ -602,25 +660,199 @@
 
     }
 
-}
+    .quantity{
 
-@media(max-width:576px){
-
-    .product-details,
-
-    .related-products,
-
-    .reviews,
-
-    .newsletter{
-
-        padding:60px 5%;
+        justify-content:center;
 
     }
 
     .section-title h2{
 
         font-size:30px;
+
+    }
+
+    .thumbnail-images img{
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+}
+
+/* ---------- 425px and below (large phones) ---------- */
+@media(max-width:425px){
+
+    .product-details,
+    .related-products,
+    .reviews,
+    .newsletter{
+
+        padding:50px 5%;
+
+    }
+
+    .product-info h1{
+
+        font-size:26px;
+
+    }
+
+    .product-info h2{
+
+        font-size:24px;
+
+    }
+
+    .rating{
+
+        font-size:16px;
+
+    }
+
+    .main-image{
+
+        padding:18px;
+
+    }
+
+    .main-image img{
+
+        max-width:300px;
+
+    }
+
+    .thumbnail-images img{
+
+        width:55px;
+
+        height:55px;
+
+    }
+
+    .specifications{
+
+        padding:18px;
+
+    }
+
+    .quantity button{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .quantity input{
+
+        width:65px;
+
+        height:40px;
+
+    }
+
+    .related-products .product-container,
+    .review-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title h2{
+
+        font-size:24px;
+
+    }
+
+    .newsletter h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+/* ---------- 375px and below ---------- */
+@media(max-width:375px){
+
+    .product-info h1{
+
+        font-size:23px;
+
+    }
+
+    .product-info h2{
+
+        font-size:21px;
+
+    }
+
+    .specifications h3{
+
+        font-size:19px;
+
+    }
+
+    .review-card{
+
+        padding:22px;
+
+    }
+
+}
+
+/* ---------- 320px and below (small Android phones) ---------- */
+@media(max-width:320px){
+
+    .product-details,
+    .related-products,
+    .reviews,
+    .newsletter{
+
+        padding:40px 4%;
+
+    }
+
+    .product-info h1{
+
+        font-size:20px;
+
+    }
+
+    .product-info h2{
+
+        font-size:19px;
+
+    }
+
+    .main-image img{
+
+        max-width:230px;
+
+    }
+
+    .thumbnail-images img{
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+    .product-buttons button{
+
+        font-size:14px;
+
+        padding:12px 20px;
+
+    }
+
+    .newsletter h2{
+
+        font-size:22px;
 
     }
 

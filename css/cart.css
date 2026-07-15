@@ -1,6 +1,4 @@
-/* ===========================
-        CART HERO
-=========================== */
+
 
 .shop-hero{
 
@@ -34,6 +32,8 @@
     align-items:center;
 
     text-align:center;
+
+    padding:20px;
 
 }
 
@@ -95,6 +95,8 @@
 
     overflow-x:auto;
 
+    -webkit-overflow-scrolling:touch;
+
 }
 
 .cart-items h2{
@@ -110,6 +112,8 @@
 table{
 
     width:100%;
+
+    min-width:520px;
 
     border-collapse:collapse;
 
@@ -130,6 +134,8 @@ th{
     text-align:left;
 
     font-weight:600;
+
+    white-space:nowrap;
 
 }
 
@@ -191,6 +197,8 @@ td img{
 
     gap:10px;
 
+    flex-wrap:wrap;
+
 }
 
 .quantity-box button{
@@ -214,6 +222,8 @@ td img{
     font-weight:bold;
 
     transition:.3s;
+
+    flex-shrink:0;
 
 }
 
@@ -248,6 +258,8 @@ td img{
     cursor:pointer;
 
     transition:.3s;
+
+    min-height:40px;
 
 }
 
@@ -294,6 +306,8 @@ td img{
     margin-bottom:20px;
 
     font-size:17px;
+
+    gap:10px;
 
 }
 
@@ -345,6 +359,8 @@ td img{
 
     transition:.3s;
 
+    min-height:52px;
+
 }
 
 #checkoutBtn:hover{
@@ -374,6 +390,8 @@ td img{
     cursor:pointer;
 
     transition:.3s;
+
+    min-height:52px;
 
 }
 
@@ -453,8 +471,21 @@ td img{
 
 /* ===========================
       RESPONSIVE
+    Breakpoints: 1200px / 992px / 768px / 425px / 375px / 320px
 =========================== */
 
+/* ---------- 1200px and below ---------- */
+@media(max-width:1200px){
+
+    .cart-section{
+
+        padding:70px 6%;
+
+    }
+
+}
+
+/* ---------- 992px and below (tablets: stack summary below items) ---------- */
 @media(max-width:992px){
 
     .cart-container{
@@ -469,13 +500,32 @@ td img{
 
     }
 
+    .cart-section{
+
+        padding:60px 6%;
+
+    }
+
+    .recommended{
+
+        padding:70px 6%;
+
+    }
+
 }
 
+/* ---------- 768px and below ---------- */
 @media(max-width:768px){
 
     .shop-overlay h1{
 
         font-size:38px;
+
+    }
+
+    .shop-overlay p{
+
+        font-size:15px;
 
     }
 
@@ -502,19 +552,32 @@ td img{
 
     }
 
+    .cart-items{
+
+        padding:20px;
+
+    }
+
+    .cart-summary{
+
+        padding:25px;
+
+    }
+
 }
 
+/* ---------- 425px and below (large phones) ---------- */
 @media(max-width:576px){
 
     .cart-section{
 
-        padding:60px 5%;
+        padding:50px 5%;
 
     }
 
     .recommended{
 
-        padding:60px 5%;
+        padding:50px 5%;
 
     }
 
@@ -531,3 +594,166 @@ td img{
     }
 
 }
+
+@media(max-width:425px){
+
+    .shop-hero{
+
+        height:40vh;
+
+    }
+
+    .shop-overlay h1{
+
+        font-size:28px;
+
+    }
+
+    .shop-overlay p{
+
+        font-size:13px;
+
+    }
+
+    .cart-items{
+
+        padding:16px;
+
+    }
+
+    .cart-items h2,
+    .cart-summary h2{
+
+        font-size:22px;
+
+    }
+
+    table{
+
+        min-width:480px;
+
+    }
+
+    .empty-cart h2{
+
+        font-size:26px;
+
+    }
+
+    .empty-cart a{
+
+        padding:14px 28px;
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
+
+/* ---------- 375px and below ---------- */
+@media(max-width:375px){
+
+    .shop-overlay h1{
+
+        font-size:24px;
+
+    }
+
+    table{
+
+        min-width:440px;
+
+    }
+
+    .cart-summary{
+
+        padding:20px;
+
+    }
+
+    .summary-row{
+
+        font-size:14px;
+
+    }
+
+    .total{
+
+        font-size:18px;
+
+    }
+
+}
+
+/* ---------- 320px and below (small Android phones) ---------- */
+@media(max-width:320px){
+
+    .cart-section{
+
+        padding:35px 4%;
+
+    }
+
+    .recommended{
+
+        padding:35px 4%;
+
+    }
+
+    .shop-overlay h1{
+
+        font-size:20px;
+
+    }
+
+    .cart-items{
+
+        padding:12px;
+
+    }
+
+    table{
+
+        min-width:400px;
+
+    }
+
+    th,
+    td{
+
+        padding:8px;
+
+        font-size:12px;
+
+    }
+
+    td img{
+
+        width:50px;
+
+    }
+
+    .quantity-box button{
+
+        width:28px;
+
+        height:28px;
+
+        font-size:14px;
+
+    }
+
+    #checkoutBtn,
+    #clearCartBtn{
+
+        font-size:14px;
+
+        padding:12px;
+
+    }
+
+}
+
+
